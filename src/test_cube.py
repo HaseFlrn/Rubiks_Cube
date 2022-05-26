@@ -1,21 +1,21 @@
 from Cube import Cube
 
 
-def testInit():
+def test_Init():
     cube = Cube()
     assert(cube.cube == 'OOOOOOOOOGGGWWWBBBYYYGGGWWWBBBYYYGGGWWWBBBYYYRRRRRRRRR')
     del(cube)
     return True
 
 
-def testStringify():
+def test_Stringify():
     cube = Cube()
     assert(str(cube) == '      O|O|O\n      O|O|O\n      O|O|O\nG|G|G|W|W|W|B|B|B|Y|Y|Y\nG|G|G|W|W|W|B|B|B|Y|Y|Y\nG|G|G|W|W|W|B|B|B|Y|Y|Y\n      R|R|R\n      R|R|R\n      R|R|R\n')
     del(cube)
     return True
 
 
-def testU():
+def test_U():
     cube = Cube()
     cube.U()
     assert(cube.cube == 'OOOOOOOOOWWWBBBYYYGGGGGGWWWBBBYYYGGGWWWBBBYYYRRRRRRRRR')
@@ -23,7 +23,7 @@ def testU():
     return True
 
 
-def testUi():
+def test_Ui():
     cube = Cube()
     cube.Ui()
     assert(cube.cube == 'OOOOOOOOOYYYGGGWWWBBBGGGWWWBBBYYYGGGWWWBBBYYYRRRRRRRRR')
@@ -31,7 +31,7 @@ def testUi():
     return True
 
 
-def testD():
+def test_D():
     cube = Cube()
     cube.D()
     assert(cube.cube == 'OOOOOOOOOGGGWWWBBBYYYGGGWWWBBBYYYYYYGGGWWWBBBRRRRRRRRR')
@@ -39,7 +39,7 @@ def testD():
     return True
 
 
-def testDi():
+def test_Di():
     cube = Cube()
     cube.Di()
     assert(cube.cube == 'OOOOOOOOOGGGWWWBBBYYYGGGWWWBBBYYYWWWBBBYYYGGGRRRRRRRRR')
@@ -48,9 +48,9 @@ def testDi():
 
 
 if __name__ == '__main__':
-    print(testInit())
-    print(testStringify())
-    print(testU())
-    print(testUi())
-    print(testD())
-    print(testDi())
+    print(test_Init())
+    print(test_Stringify())
+    print(test_U())
+    print(test_Ui())
+    print(test_D())
+    print(test_Di())
