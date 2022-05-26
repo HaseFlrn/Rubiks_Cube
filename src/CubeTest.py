@@ -7,11 +7,14 @@ def testInit():
     del(cube)
     return True
 
+
 def testStringify():
     cube = Cube()
-    assert(str(cube) == '      O|O|O\n      O|O|O\n      O|O|O\nG|G|G|W|W|W|B|B|B|Y|Y|Y\nG|G|G|W|W|W|B|B|B|Y|Y|Y\nG|G|G|W|W|W|B|B|B|Y|Y|Y\n      R|R|R\n      R|R|R\n      R|R|R\n')
+    assert(str(cube) == 
+    '      O|O|O\n      O|O|O\n      O|O|O\nG|G|G|W|W|W|B|B|B|Y|Y|Y\nG|G|G|W|W|W|B|B|B|Y|Y|Y\nG|G|G|W|W|W|B|B|B|Y|Y|Y\n      R|R|R\n      R|R|R\n      R|R|R\n')
     del(cube)
     return True
+
 
 def testU():
     cube = Cube()
@@ -21,12 +24,14 @@ def testU():
     del(cube)
     return True
 
+
 def testUi():
     cube = Cube()
     cube.Ui()
     assert(cube.cube == 'OOOOOOOOOYYYGGGWWWBBBGGGWWWBBBYYYGGGWWWBBBYYYRRRRRRRRR')
     del(cube)
     return True
+
 
 def testD():
     cube = Cube()
@@ -35,12 +40,14 @@ def testD():
     del(cube)
     return True
 
+
 def testDi():
     cube = Cube()
     cube.Di()
     assert(cube.cube == 'OOOOOOOOOGGGWWWBBBYYYGGGWWWBBBYYYWWWBBBYYYGGGRRRRRRRRR')
     del(cube)
     return True
+
 
 if __name__ == '__main__':
     print(testInit())

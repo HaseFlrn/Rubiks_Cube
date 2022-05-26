@@ -14,17 +14,17 @@ class Cube():
                R|R|R                         51|52|53
         '''
         self.cube = 'OOOOOOOOOGGGWWWBBBYYYGGGWWWBBBYYYGGGWWWBBBYYYRRRRRRRRR'
-        
+
 
     def __str__(self) -> str:
-        start = [0,3,6,45,48,51]
-        end = [2,5,8,20,32,44,47,50,53]
+        start = [0, 3, 6, 45, 48, 51]
+        end = [2, 5, 8, 20, 32, 44, 47, 50, 53]
         cube = ''
         idx = 0
         for c in self.cube:
             if start.__contains__(idx):
                 cube += '      '
-            cube += c 
+            cube += c
             if end.__contains__(idx):
                 cube += '\n'
             else:
@@ -45,7 +45,7 @@ class Cube():
         cube[12] = cube[15]
         cube[13] = cube[16]
         cube[14] = cube[17]
-        
+
         cube[15] = cube[18]
         cube[16] = cube[19]
         cube[17] = cube[20]
@@ -106,7 +106,7 @@ class Cube():
 
         cube[7] = temp1
         cube[6] = cube[3]
-        
+
         cube[3] = temp2
 
         self.cube = ''.join(cube)
@@ -160,7 +160,7 @@ class Cube():
         cube[43] = temp2
         cube[44] = temp3
         self.cube = ''.join(cube)
-    
+
     def L(self) -> None:
         pass
         cube = list(self.cube)
@@ -208,7 +208,7 @@ class Cube():
         cube[43] = temp2
         cube[44] = temp3
         self.cube = ''.join(cube)
-    
+
     def R(self) -> None:
         cube = list(self.cube)
         temp1 = cube[33]
@@ -232,7 +232,7 @@ class Cube():
         cube[44] = temp3
         self.cube = ''.join(cube)
         pass
-    
+
     def Ri(self) -> None:
         pass
         cube = list(self.cube)
@@ -256,7 +256,7 @@ class Cube():
         cube[43] = temp2
         cube[44] = temp3
         self.cube = ''.join(cube)
-    
+
     def F(self) -> None:
         pass
         cube = list(self.cube)
@@ -280,7 +280,7 @@ class Cube():
         cube[43] = temp2
         cube[44] = temp3
         self.cube = ''.join(cube)
-    
+
     def Fi(self) -> None:
         pass
         cube = list(self.cube)
@@ -304,7 +304,7 @@ class Cube():
         cube[43] = temp2
         cube[44] = temp3
         self.cube = ''.join(cube)
-    
+
     def B(self) -> None:
         pass
         cube = list(self.cube)
@@ -328,7 +328,7 @@ class Cube():
         cube[43] = temp2
         cube[44] = temp3
         self.cube = ''.join(cube)
-    
+
     def Bi(self) -> None:
         pass
         cube = list(self.cube)
@@ -364,4 +364,3 @@ if __name__ == '__main__':
     print(cube)
     cube.L()
     print(cube)
-    
