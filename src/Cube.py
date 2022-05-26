@@ -109,7 +109,6 @@ class Cube():
         cube[3] = temp2
 
         self.cube = ''.join(cube)
-    # ! Restliche Felder bewegen sich auch -> muss noch implementiert werden
 
     def D(self) -> None:
         pass
@@ -133,7 +132,24 @@ class Cube():
         cube[36] = temp1
         cube[37] = temp2
         cube[38] = temp3
+
+        temp1 = cube[45]
+        temp2 = cube[46]
+        temp3 = cube[47]
+
+        cube[45] = cube[51]
+        cube[46] = cube[47]
+        cube[47] = temp1
+
+        cube[48] = cube[52]
+        cube[51] = cube[53]
+
+        cube[52] = cube[50]
+        cube[53] = temp3
+
+        cube[50] = temp2
         self.cube = ''.join(cube)
+    # ! Restliche Felder bewegen sich auch -> muss noch implementiert werden
 
     def Di(self) -> None:
         pass
