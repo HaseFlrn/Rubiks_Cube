@@ -15,7 +15,6 @@ class Cube():
         '''
         self.cube = 'OOOOOOOOOGGGWWWBBBYYYGGGWWWBBBYYYGGGWWWBBBYYYRRRRRRRRR'
 
-
     def __str__(self) -> str:
         start = [0, 3, 6, 45, 48, 51]
         end = [2, 5, 8, 20, 32, 44, 47, 50, 53]
@@ -84,7 +83,7 @@ class Cube():
         cube[18] = cube[15]
         cube[19] = cube[16]
         cube[20] = cube[17]
-        
+
         cube[15] = cube[12]
         cube[16] = cube[13]
         cube[17] = cube[14]
@@ -110,9 +109,8 @@ class Cube():
         cube[3] = temp2
 
         self.cube = ''.join(cube)
+    # ! Restliche Felder bewegen sich auch -> muss noch implementiert werden
 
-
-    #! Restliche Felder bewegen sich auch -> muss noch implementiert werden
     def D(self) -> None:
         pass
         cube = list(self.cube)

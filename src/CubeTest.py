@@ -10,8 +10,7 @@ def testInit():
 
 def testStringify():
     cube = Cube()
-    assert(str(cube) == 
-    '      O|O|O\n      O|O|O\n      O|O|O\nG|G|G|W|W|W|B|B|B|Y|Y|Y\nG|G|G|W|W|W|B|B|B|Y|Y|Y\nG|G|G|W|W|W|B|B|B|Y|Y|Y\n      R|R|R\n      R|R|R\n      R|R|R\n')
+    assert(str(cube) == '      O|O|O\n      O|O|O\n      O|O|O\nG|G|G|W|W|W|B|B|B|Y|Y|Y\nG|G|G|W|W|W|B|B|B|Y|Y|Y\nG|G|G|W|W|W|B|B|B|Y|Y|Y\n      R|R|R\n      R|R|R\n      R|R|R\n')
     del(cube)
     return True
 
@@ -20,7 +19,6 @@ def testU():
     cube = Cube()
     cube.U()
     assert(cube.cube == 'OOOOOOOOOWWWBBBYYYGGGGGGWWWBBBYYYGGGWWWBBBYYYRRRRRRRRR')
-    
     del(cube)
     return True
 
