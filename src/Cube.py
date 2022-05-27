@@ -227,7 +227,6 @@ class Cube():
         cube[34] = temp2
         self.cube = ''.join(cube)
 
-    # ! Restliche Felder bewegen sich auch -> muss noch implementiert werden
     def Li(self) -> None:
         pass
         cube = list(self.cube)
@@ -347,6 +346,7 @@ class Cube():
         cube[40] = temp2
         self.cube = ''.join(cube)
 
+    # ! Restliche Felder bewegen sich auch -> muss noch implementiert werden
     def F(self) -> None:
         pass
         cube = list(self.cube)
