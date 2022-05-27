@@ -103,15 +103,14 @@ class Cube():
         cube[8] = cube[6]
         cube[5] = cube[7]
 
-        cube[7] = temp1
-        cube[6] = cube[3]
+        cube[6] = temp1
+        cube[7] = cube[3]
 
         cube[3] = temp2
 
         self.cube = ''.join(cube)
 
     def D(self) -> None:
-        pass
         cube = list(self.cube)
         temp1 = cube[33]
         temp2 = cube[34]
@@ -138,7 +137,7 @@ class Cube():
         temp3 = cube[47]
 
         cube[45] = cube[51]
-        cube[46] = cube[47]
+        cube[46] = cube[48]
         cube[47] = temp1
 
         cube[48] = cube[52]
@@ -149,10 +148,8 @@ class Cube():
 
         cube[50] = temp2
         self.cube = ''.join(cube)
-    # ! Restliche Felder bewegen sich auch -> muss noch implementiert werden
 
     def Di(self) -> None:
-        pass
         cube = list(self.cube)
         temp1 = cube[33]
         temp2 = cube[34]
@@ -173,10 +170,25 @@ class Cube():
         cube[42] = temp1
         cube[43] = temp2
         cube[44] = temp3
+
+        temp1 = cube[45]
+        temp2 = cube[46]
+        temp3 = cube[47]
+
+        cube[45] = temp3
+        cube[46] = cube[50]
+        cube[47] = cube[53]
+
+        cube[50] = cube[52]
+        cube[53] = cube[51]
+
+        cube[52] = cube[48]
+        cube[51] = temp1
+
+        cube[48] = temp2
         self.cube = ''.join(cube)
 
     def L(self) -> None:
-        pass
         cube = list(self.cube)
         temp1 = cube[0]
         temp2 = cube[3]
@@ -191,180 +203,166 @@ class Cube():
         cube[20] = cube[51]
 
         cube[45] = cube[12]
-        cube[48] = cube[25]
+        cube[48] = cube[24]
         cube[51] = cube[36]
 
         cube[12] = temp1
         cube[24] = temp2
         cube[36] = temp3
+
+        temp1 = cube[11]
+        temp2 = cube[23]
+        temp3 = cube[35]
+
+        cube[11] = cube[9]
+        cube[23] = cube[10]
+        cube[35] = temp1
+
+        cube[10] = cube[21]
+        cube[9] = cube[33]
+
+        cube[21] = cube[34]
+        cube[33] = temp3
+
+        cube[34] = temp2
         self.cube = ''.join(cube)
 
+    # ! Restliche Felder bewegen sich auch -> muss noch implementiert werden
     def Li(self) -> None:
         pass
         cube = list(self.cube)
-        temp1 = cube[33]
-        temp2 = cube[34]
+        temp1 = cube[0]
+        temp2 = cube[3]
+        temp3 = cube[6]
+
+        cube[0] = cube[12]
+        cube[3] = cube[24]
+        cube[6] = cube[36]
+
+        cube[12] = cube[45]
+        cube[24] = cube[48]
+        cube[36] = cube[51]
+
+        cube[45] = cube[44]
+        cube[48] = cube[32]
+        cube[51] = cube[20]
+
+        cube[44] = temp1
+        cube[32] = temp2
+        cube[20] = temp3
+
+        temp1 = cube[11]
+        temp2 = cube[23]
         temp3 = cube[35]
 
-        cube[33] = cube[36]
-        cube[34] = cube[37]
-        cube[35] = cube[38]
+        cube[11] = temp3
+        cube[23] = cube[34]
+        cube[35] = cube[33]
 
-        cube[36] = cube[39]
-        cube[37] = cube[40]
-        cube[38] = cube[41]
+        cube[34] = cube[21]
+        cube[33] = cube[9]
 
-        cube[39] = cube[42]
-        cube[40] = cube[43]
-        cube[41] = cube[44]
+        cube[21] = cube[10]
+        cube[9] = temp1
 
-        cube[42] = temp1
-        cube[43] = temp2
-        cube[44] = temp3
+        cube[10] = temp2
         self.cube = ''.join(cube)
 
     def R(self) -> None:
         cube = list(self.cube)
-        temp1 = cube[33]
-        temp2 = cube[34]
-        temp3 = cube[35]
+        temp1 = cube[2]
+        temp2 = cube[5]
+        temp3 = cube[8]
 
-        cube[33] = cube[36]
-        cube[34] = cube[37]
-        cube[35] = cube[38]
+        cube[2] = cube[14]
+        cube[5] = cube[26]
+        cube[8] = cube[38]
 
-        cube[36] = cube[39]
-        cube[37] = cube[40]
-        cube[38] = cube[41]
+        cube[14] = cube[47]
+        cube[26] = cube[50]
+        cube[38] = cube[53]
 
-        cube[39] = cube[42]
-        cube[40] = cube[43]
-        cube[41] = cube[44]
+        cube[47] = cube[42]
+        cube[50] = cube[30]
+        cube[53] = cube[18]
 
         cube[42] = temp1
-        cube[43] = temp2
-        cube[44] = temp3
+        cube[30] = temp2
+        cube[18] = temp3
+
+        temp1 = cube[15]
+        temp2 = cube[27]
+        temp3 = cube[39]
+
+        cube[15] = temp3
+        cube[27] = cube[40]
+        cube[39] = cube[41]
+
+        cube[40] = cube[29]
+        cube[41] = cube[17]
+
+        cube[29] = cube[16]
+        cube[17] = temp1
+
+        cube[16] = temp2
         self.cube = ''.join(cube)
-        pass
 
     def Ri(self) -> None:
-        pass
         cube = list(self.cube)
-        temp1 = cube[33]
-        temp2 = cube[34]
-        temp3 = cube[35]
+        cube = list(self.cube)
+        temp1 = cube[2]
+        temp2 = cube[5]
+        temp3 = cube[8]
 
-        cube[33] = cube[36]
-        cube[34] = cube[37]
-        cube[35] = cube[38]
+        cube[2] = cube[42]
+        cube[5] = cube[30]
+        cube[8] = cube[18]
 
-        cube[36] = cube[39]
-        cube[37] = cube[40]
-        cube[38] = cube[41]
+        cube[42] = cube[47]
+        cube[30] = cube[50]
+        cube[18] = cube[53]
 
-        cube[39] = cube[42]
-        cube[40] = cube[43]
-        cube[41] = cube[44]
+        cube[47] = cube[14]
+        cube[50] = cube[26]
+        cube[53] = cube[38]
 
-        cube[42] = temp1
-        cube[43] = temp2
-        cube[44] = temp3
+        cube[14] = temp1
+        cube[26] = temp2
+        cube[38] = temp3
+
+        temp1 = cube[15]
+        temp2 = cube[27]
+        temp3 = cube[39]
+
+        cube[15] = cube[17]
+        cube[27] = cube[16]
+        cube[39] = temp1
+
+        cube[17] = cube[41]
+        cube[16] = cube[29]
+
+        cube[29] = cube[40]
+        cube[41] = temp3
+
+        cube[40] = temp2
         self.cube = ''.join(cube)
 
     def F(self) -> None:
         pass
         cube = list(self.cube)
-        temp1 = cube[33]
-        temp2 = cube[34]
-        temp3 = cube[35]
-
-        cube[33] = cube[36]
-        cube[34] = cube[37]
-        cube[35] = cube[38]
-
-        cube[36] = cube[39]
-        cube[37] = cube[40]
-        cube[38] = cube[41]
-
-        cube[39] = cube[42]
-        cube[40] = cube[43]
-        cube[41] = cube[44]
-
-        cube[42] = temp1
-        cube[43] = temp2
-        cube[44] = temp3
         self.cube = ''.join(cube)
 
     def Fi(self) -> None:
         pass
         cube = list(self.cube)
-        temp1 = cube[33]
-        temp2 = cube[34]
-        temp3 = cube[35]
-
-        cube[33] = cube[36]
-        cube[34] = cube[37]
-        cube[35] = cube[38]
-
-        cube[36] = cube[39]
-        cube[37] = cube[40]
-        cube[38] = cube[41]
-
-        cube[39] = cube[42]
-        cube[40] = cube[43]
-        cube[41] = cube[44]
-
-        cube[42] = temp1
-        cube[43] = temp2
-        cube[44] = temp3
         self.cube = ''.join(cube)
 
     def B(self) -> None:
         pass
-        cube = list(self.cube)
-        temp1 = cube[33]
-        temp2 = cube[34]
-        temp3 = cube[35]
-
-        cube[33] = cube[36]
-        cube[34] = cube[37]
-        cube[35] = cube[38]
-
-        cube[36] = cube[39]
-        cube[37] = cube[40]
-        cube[38] = cube[41]
-
-        cube[39] = cube[42]
-        cube[40] = cube[43]
-        cube[41] = cube[44]
-
-        cube[42] = temp1
-        cube[43] = temp2
-        cube[44] = temp3
         self.cube = ''.join(cube)
 
     def Bi(self) -> None:
         pass
-        cube = list(self.cube)
-        temp1 = cube[33]
-        temp2 = cube[34]
-        temp3 = cube[35]
-
-        cube[33] = cube[36]
-        cube[34] = cube[37]
-        cube[35] = cube[38]
-
-        cube[36] = cube[39]
-        cube[37] = cube[40]
-        cube[38] = cube[41]
-
-        cube[39] = cube[42]
-        cube[40] = cube[43]
-        cube[41] = cube[44]
-
-        cube[42] = temp1
-        cube[43] = temp2
-        cube[44] = temp3
         self.cube = ''.join(cube)
 
 
@@ -372,9 +370,9 @@ if __name__ == '__main__':
     cube = Cube()
     print("Init:")
     print(cube)
-    cube.L()
+    cube.D()
     print(cube)
-    cube.U()
+    cube.R()
     print(cube)
-    cube.L()
+    cube.Ri()
     print(cube)
