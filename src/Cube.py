@@ -346,23 +346,113 @@ class Cube():
         cube[40] = temp2
         self.cube = ''.join(cube)
 
-    # ! Restliche Felder bewegen sich auch -> muss noch implementiert werden
     def F(self) -> None:
-        pass
         cube = list(self.cube)
+
+        temp1 = cube[13]
+        temp2 = cube[14]
+        temp3 = cube[15]
+
+        cube[13] = cube[37]
+        cube[14] = cube[25]
+        cube[15] = temp1
+
+        cube[37] = cube[39]
+        cube[25] = cube[38]
+
+        cube[39] = temp3
+        cube[38] = cube[27]
+
+        cube[27] = temp2
+
+        temp1 = cube[7]
+        temp2 = cube[8]
+        temp3 = cube[9]
+
+        cube[7] = cube[36]
+        cube[8] = cube[24]
+        cube[9] = cube[12]
+
+        cube[36] = cube[48]
+        cube[24] = cube[47]
+        cube[12] = cube[46]
+
+        cube[48] = cube[16]
+        cube[47] = cube[28]
+        cube[46] = cube[40]
+
+        cube[16] = temp1
+        cube[28] = temp2
+        cube[40] = temp3
         self.cube = ''.join(cube)
 
     def Fi(self) -> None:
-        pass
         cube = list(self.cube)
+
+        temp1 = cube[12]
+        temp2 = cube[13]
+        temp3 = cube[14]
+
+        cube[12] = temp3
+        cube[13] = cube[26]
+        cube[14] = cube[38]
+
+        cube[26] = cube[37] 
+        cube[38] = cube[36]
+
+        cube[37] = cube[24]
+        cube[36] = temp1
+
+        cube[24] = temp2
+
+        temp1 = cube[6]
+        temp2 = cube[7]
+        temp3 = cube[8]
+
+        cube[6] = cube[15]
+        cube[7] = cube[27]
+        cube[8] = cube[39]
+
+        cube[15] = cube[47]
+        cube[27] = cube[46]
+        cube[39] = cube[45]
+
+        cube[47] = cube[35]
+        cube[46] = cube[23]
+        cube[45] = cube[11]
+
+        cube[35] = temp1
+        cube[23] = temp2
+        cube[11] = temp3
         self.cube = ''.join(cube)
 
     def B(self) -> None:
         pass
+        cube = list(self.cube)
+
+        temp1 = cube[18]
+        temp2 = cube[19]
+        temp3 = cube[20]
+
+        cube[18] = cube[42]
+        cube[19] = cube[30]
+        cube[19] = temp1
+
+        cube[42] = cube[44]
+        cube[30] = cube[43]
+
+        cube[44] = temp3
+        cube[43] = cube[32]
+
+        cube[32] = temp2
+
+        # TODO: sides
         self.cube = ''.join(cube)
 
     def Bi(self) -> None:
+        # TODO: full
         pass
+        cube = list(self.cube)
         self.cube = ''.join(cube)
 
 
