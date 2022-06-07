@@ -427,7 +427,6 @@ class Cube():
         self.cube = ''.join(cube)
 
     def B(self) -> None:
-        pass
         cube = list(self.cube)
 
         temp1 = cube[18]
@@ -436,7 +435,7 @@ class Cube():
 
         cube[18] = cube[42]
         cube[19] = cube[30]
-        cube[19] = temp1
+        cube[20] = temp1
 
         cube[42] = cube[44]
         cube[30] = cube[43]
@@ -446,13 +445,66 @@ class Cube():
 
         cube[32] = temp2
 
-        # TODO: sides
+        temp1 = cube[0]
+        temp2 = cube[1]
+        temp3 = cube[2]
+
+        cube[0] = cube[17]
+        cube[1] = cube[29]
+        cube[2] = cube[41]
+
+        cube[17] = cube[53]
+        cube[29] = cube[52]
+        cube[41] = cube[51]
+
+        cube[53] = cube[33]
+        cube[52] = cube[21]
+        cube[51] = cube[9]
+
+        cube[33] = temp1
+        cube[21] = temp2
+        cube[9] = temp3
         self.cube = ''.join(cube)
 
     def Bi(self) -> None:
-        # TODO: full
         pass
         cube = list(self.cube)
+        
+        temp1 = cube[18]
+        temp2 = cube[19]
+        temp3 = cube[20]
+
+        cube[18] = temp3
+        cube[19] = cube[32]
+        cube[20] = cube[44]
+
+        cube[32] = cube[43]
+        cube[44] = cube[42]
+
+        cube[43] = cube[30]
+        cube[42] = temp1
+
+        cube[30] = temp2
+
+        temp1 = cube[0]
+        temp2 = cube[1]
+        temp3 = cube[2]
+
+        cube[2] = cube[9]
+        cube[1] = cube[21]
+        cube[0] = cube[33]
+
+        cube[9] = cube[51]
+        cube[21] = cube[52]
+        cube[33] = cube[53]
+
+        cube[51] = cube[41]
+        cube[52] = cube[29]
+        cube[53] = cube[17]
+
+        cube[41] = temp3
+        cube[29] = temp2
+        cube[17] = temp1
         self.cube = ''.join(cube)
 
 
