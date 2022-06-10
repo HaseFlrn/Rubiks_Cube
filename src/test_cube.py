@@ -47,6 +47,13 @@ def test_Di():
     return True
 
 
+def test_L():
+    cube = Cube()
+    cube.L()
+    assert(cube.cube == 'YOOYOOYOOGGGOWWBBBYYRGGGOWWBBBYYRGGGOWWBBBYYRWRRWRRWRR')
+    del(cube)
+    return True
+
 if __name__ == '__main__':
     print(test_Init())
     print(test_Stringify())
@@ -54,3 +61,4 @@ if __name__ == '__main__':
     print(test_Ui())
     print(test_D())
     print(test_Di())
+    print(test_L())
